@@ -144,7 +144,7 @@ if (!is_null($events['events'])) {
 				echo $result . "\r\n";				
 			}	
 		}
-    /*/ Action Postback only when MacShare.
+    // Action Postback only when MacShare.
 	  	if ($event['type'] == 'postback') {
 			$touserid = $event['source']['userId'];
 			$toroomid = $event['source']['roomId'];
@@ -176,7 +176,7 @@ if (!is_null($events['events'])) {
 				curl_close($ch);
 				echo $result . "\r\n";				
 			}	
-		} */
+		} 
   }
 }
 
