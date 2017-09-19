@@ -128,7 +128,7 @@ if (!is_null($events['events'])) {
 			$togroupid = $event['source']['groupId'];
 			$replyToken = $event['replyToken'];
 			$text = $event['message']['text'];
-			if (($text == '00MacShare') and (($togroupid == 'Cd90b89c39f5a695f6d6996c80829e269') or ($togroupid == 'Cc7ac9ccc51f05b2a60a1abed8cf85723') or ($touserid == 'U554a18dbd36996fdb3dd95c218cf6db0'))) {
+			if (($text == 'MacShare') and (($togroupid == 'Cd90b89c39f5a695f6d6996c80829e269') or ($togroupid == 'Cc7ac9ccc51f05b2a60a1abed8cf85723') or ($touserid == 'U554a18dbd36996fdb3dd95c218cf6db0'))) {
 				$url = 'https://api.line.me/v2/bot/message/reply';
 				$data = temp2imgcol3($replyToken);
 				$post = json_encode($data);
