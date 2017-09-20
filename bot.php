@@ -129,7 +129,7 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 			$text = $event['message']['text'];
 			//Echo Bot
-			
+			$text = tt1($text);
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'to' => $replyToken,
