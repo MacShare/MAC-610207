@@ -133,9 +133,9 @@ if (!is_null($events['events'])) {
 				$url = 'https://api.line.me/v2/bot/message/reply';
 				$data = temp2imgcol3($replyToken);
 								
-				//$messages = t1($text);
-				//$url = 'https://api.line.me/v2/bot/message/reply';
-				//$data = data1($replyToken,$messages);
+				$messages = t1($text);
+				$url = 'https://api.line.me/v2/bot/message/reply';
+				$data = data1($replyToken,$messages);
 				
 				$post = json_encode($data);
 				$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
