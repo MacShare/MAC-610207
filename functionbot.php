@@ -156,7 +156,8 @@ function temp2imgcol3($replyToken)
 {
 	//$imgUrl1 = $ecsURL."ColMenu_1.jpg";
 	//$imgUrl2 = $ecsURL."ColMenu_2.jpg";
-	//$imgUrl3 = $ecsURL."ColMenu_3.jpg";
+	$ecsURL = "https://ecs.egat.co.th/index.php/apps/gallery/ajax/image.php?file=fd20b4335410e38c017713bd6d458deb%2F%2F";
+	$imgUrl3 = $ecsURL."ColMenu_3.jpg";
 	$col1_act = [
 		'type' => 'postback',
 		'label' => 'Power Flow',
@@ -188,8 +189,8 @@ function temp2imgcol3($replyToken)
 		'data' => 'action=TransformerLoading'	
 		];
 	$col3 = [
-		'imageUrl' => 'https://ecs.egat.co.th/index.php/apps/gallery/ajax/image.php?file=fd20b4335410e38c017713bd6d458deb%2F%2FColMenu_3.jpg',
-		//'imageUrl' => $imgUrl3,
+		//'imageUrl' => 'https://ecs.egat.co.th/index.php/apps/gallery/ajax/image.php?file=fd20b4335410e38c017713bd6d458deb%2F%2FColMenu_3.jpg',
+		'imageUrl' => $imgUrl3,
 		'title' => 'This is menu.',
 		'text' => 'Discription',
 		'action' => $col3_act
@@ -200,7 +201,7 @@ function temp2imgcol3($replyToken)
 		'altText' => 'MAC Share Menu',
 		'template' => [
 			'type' => 'image_carousel',
-			'columns' => [$col1,$col2]
+			'columns' => [$col1,$col2,$col3]
 			]
 		];
 	$data = [
