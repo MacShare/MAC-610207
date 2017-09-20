@@ -189,7 +189,7 @@ function temp2imgcol3($replyToken)
 		];
 	$col3 = [
 		//'imageUrl' => 'https://ecs.egat.co.th/index.php/apps/gallery/ajax/image.php?file=fd20b4335410e38c017713bd6d458deb%2F%2FColMenu_3.jpg',
-		'imageUrl' => '$imgUrl3',
+		'imageUrl' => $imgUrl3,
 		'title' => 'This is menu.',
 		'text' => 'Discription',
 		'action' => $col3_act
