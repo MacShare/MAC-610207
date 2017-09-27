@@ -157,7 +157,7 @@ function temp2imgcol3($replyToken,$ecsURL)
 	$imgUrl1 = $ecsURL."ColMenu_1.jpg";
 	$imgUrl2 = $ecsURL."ColMenu_2.jpg";
 	//$ecsURL = "https://ecs.egat.co.th/index.php/apps/gallery/ajax/image.php?file=fd20b4335410e38c017713bd6d458deb%2F%2F";
-	$imgUrl3 = $ecsURL."ColMenu_3.JPG";
+	$imgUrl3 = $ecsURL."ColMenu_3.jpg";
 	$col1_act = [
 		'type' => 'postback',
 		'label' => 'Power Flow',
