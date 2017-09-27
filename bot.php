@@ -131,12 +131,7 @@ if (!is_null($events['events'])) {
 			//Select Group
 			if (($text == 'MacShare') and (($togroupid == 'Cd90b89c39f5a695f6d6996c80829e269') or ($togroupid == 'Cc7ac9ccc51f05b2a60a1abed8cf85723') or ($touserid == 'U554a18dbd36996fdb3dd95c218cf6db0'))) {
 				$url = 'https://api.line.me/v2/bot/message/reply';
-				$data = temp2imgcol3($replyToken);
-								
-				//$messages = t1($text);
-				//$url = 'https://api.line.me/v2/bot/message/reply';
-				//$data = data1($replyToken,$messages);
-				
+				$data = temp2imgcol3($replyToken,$ecsURL);			
 				$post = json_encode($data);
 				$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 				$ch = curl_init($url);
@@ -157,12 +152,6 @@ if (!is_null($events['events'])) {
 			$togroupid = $event['source']['groupId'];
 			$replyToken = $event['replyToken'];
 			$timedata = $event['timestamp'];
-			
-			//$timedata = substr($timedata,0,strlen($timedata)-3)
-
-			
-			//$timedata = $timedata. "\n" . strtotime("now") . "\n" . ((strtotime("now") * 1000) - $timedata) . "\n" . mktime ( $hour, $minute, $second, $month, $day, $year, $is_dst ). "\n" . date(DATE_RFC3339) . "\n";
-			
 			$postbackdata = $event['postback']['data'];
 			$postbackdata = $postbackdata;
 			//$postbackdata = "Test Postback";
