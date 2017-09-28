@@ -174,6 +174,22 @@ if (!is_null($events['events'])) {
 					curl_close($ch);
 					echo $result . "\r\n";	
 				}
+				switch ($postbackdata) {
+					case "action=Powerflow":
+						// Power Flow Last Time
+						include 'MacPowerFlow.php';
+						break;					
+					case "action=SwitchingDiagram":
+						// Switching Diagram
+						include 'MacDiagram.php';
+						break;
+					case "action=TransformerLoading":
+						// Transformer Last Day
+						include 'MacTransformer.php';
+						break;						
+					default:
+						include 'MacSorry.php';
+				}
 			}	
 		} 
   }
