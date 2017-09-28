@@ -1,7 +1,7 @@
 <?php
 $SorryTxt = "ขออภัยคุณเข้าสู่ระบบไม่ถูกต้อง";
 $url = 'https://api.line.me/v2/bot/message/reply';
-$postbackdata = tt1($SorryTxt);
+$postbackdata = t1($SorryTxt);
 $data = data1($replyToken,$postbackdata);
 $post = json_encode($data);
 $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
