@@ -156,7 +156,7 @@ if (!is_null($events['events'])) {
 			//$postbackdata = $postbackdata;
 			//$postbackdata = "Test Postback";
 			if (($togroupid == 'Cd90b89c39f5a695f6d6996c80829e269') or ($togroupid == 'Cc7ac9ccc51f05b2a60a1abed8cf85723') or ($touserid == 'U554a18dbd36996fdb3dd95c218cf6db0')) {
-				if ($postbackdata == 'action=SwitchingDiagram') {
+				/*if ($postbackdata == 'action=SwitchingDiagram') {
 					$originalContentUrl = $ecsURL."Mac_Power.jpg";
 					$previewImageUrl = $ecsURL."SW_BK.JPG";
 					$url = 'https://api.line.me/v2/bot/message/reply';
@@ -173,11 +173,12 @@ if (!is_null($events['events'])) {
 					$result = curl_exec($ch);
 					curl_close($ch);
 					echo $result . "\r\n";	
-				}
+				}*/
 				switch ($postbackdata) {
 					case "action=Powerflow":
 						// Power Flow Last Time
-						include 'MacPowerFlow.php';
+						//include 'MacPowerFlow.php';
+						include 'MacDiagram.php';
 						break;					
 					case "action=SwitchingDiagram":
 						// Switching Diagram
@@ -185,10 +186,12 @@ if (!is_null($events['events'])) {
 						break;
 					case "action=TransformerLoading":
 						// Transformer Last Day
-						include 'MacTransformer.php';
+						//include 'MacTransformer.php';
+						include 'MacDiagram.php';
 						break;						
 					default:
-						include 'MacSorry.php';
+						//include 'MacSorry.php';
+						include 'MacDiagram.php';
 				}
 			}	
 		} 
