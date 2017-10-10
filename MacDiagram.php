@@ -1,5 +1,8 @@
 <?php
-$originalContentUrl = $ecsURL."Mac_Power.jpg";
+//$originalContentUrl = $ecsURL."Mac_Power.jpg";
+
+$originalContentUrl = $ecsURL."BK_1.JPG";
+
 $previewImageUrl = $ecsURL."SW_BK.JPG";
 $url = 'https://api.line.me/v2/bot/message/reply';
 $postbackdata = im1($originalContentUrl,$previewImageUrl);
