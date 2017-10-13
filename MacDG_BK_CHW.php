@@ -1,6 +1,15 @@
 <?php
-$Org1 = "ขออภัย อยู่ระหว่างดำเนินการ";
-$Pv1 = "ขออภัย อยู่ระหว่างดำเนินการ";
+$Org1 = $ecsURL."BK_1.JPG";
+$Pv1 = $ecsURL."SW_BK.JPG";
+
+$Org2 = $ecsURL."BN_1.JPG";
+$Pv2 = $ecsURL."SW_BN.JPG";
+
+$Org3 = $ecsURL."BPL_1.JPG";
+$Pv3 = $ecsURL."SW_BPL.JPG";
+
+$Org4 = $ecsURL."CHW_1.JPG";
+$Pv4 = $ecsURL."SW_CHW.JPG";
 
 
 $url = 'https://api.line.me/v2/bot/message/reply';
