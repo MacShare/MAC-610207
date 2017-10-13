@@ -1,5 +1,5 @@
 <?php
-$SorryTxt = "ขออภัยคุณเข้าสู่ระบบไม่ถูกต้อง";
+$SorryTxt = "ขออภัยระบบอยู่ระหว่างการปรับปรุง";
 $url = 'https://api.line.me/v2/bot/message/reply';
 $postbackdata = t1($SorryTxt);
 $data = data1($replyToken,$postbackdata);
