@@ -176,16 +176,16 @@ if (!is_null($events['events'])) {
 						include 'MacDG_LLA_LPR.php';
 						break;
 					case "action=NB_NCO":
-						include 'MacSorry.php';
+						include 'MacDG_NB_NCO.php';
 						break;
 					case "action=NV_ON":
-						include 'MacSorry.php';
+						include 'MacDG_NV_ON.php';
 						break;
 					case "action=RPS_RS_SB":
-						include 'MacSorry.php';
+						include 'MacDG_RPS_SB.php';
 						break;
 					case "action=SNO_STB_TPR":
-						include 'MacSorry.php';
+						include 'MacDG_SNO_TPR.php';
 						break;						
 					default:
 						include 'MacSorry.php';						
