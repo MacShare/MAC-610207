@@ -173,7 +173,7 @@ if (!is_null($events['events'])) {
 						include 'MacDG_BK_CHW.php';
 						break;
 					case "action=LLA_LPR":
-						include 'MacSorry.php';
+						include 'MacDG_LLA_LPR.php';
 						break;
 					case "action=NB_NCO":
 						include 'MacSorry.php';
