@@ -2,46 +2,46 @@
 	//Column 1
 	$col1_1 = [
 		'type' => 'postback',
-		'label' => 'BK,BN,BPL,CHW,LLA',
-		'data' => 'action=BK_BN_BPL_CHW_LLA'	
+		'label' => 'BK, BN, BPL, CHW',
+		'data' => 'action=BK_BN_BPL_CHW'	
 		];
 	$col1_2 = [
 		'type' => 'postback',
-		'label' => 'LPR,NB',
-		'data' => 'action=LPR_NB'	
+		'label' => 'LLA, LPR',
+		'data' => 'action=LLA_LPR'	
 		];
 	$col1_3 = [
 		'type' => 'postback',
-		'label' => 'NCO,NV',
-		'data' => 'action=NCO_NV'	
+		'label' => 'NB, NCO',
+		'data' => 'action=NB_NCO'	
 		];
 	$col1 = [
 		'thumbnailImageUrl' => $ecsURL.'SW_BK.JPG',
-		'title' => 'This is menu.',
-		'text' => 'Discription',
+		'title' => 'MAC',
+		'text' => 'Switching Digram',
 		'actions' => [$col1_1,$col1_2,$col1_3]
 		];
 	
 	//Column 2
 	$col2_1 = [
 		'type' => 'postback',
-		'label' => 'ON,RPS',
-		'data' => 'action=ON_RPS'	
+		'label' => 'NV, ON',
+		'data' => 'action=NV_ON'	
 		];
 	$col2_2 = [
 		'type' => 'postback',
-		'label' => 'RS,SB,SNO',
-		'data' => 'action=RS_SB_SNO'	
+		'label' => 'RPS, RS, SB',
+		'data' => 'action=RPS_RS_SB'	
 		];
 	$col2_3 = [
 		'type' => 'postback',
-		'label' => 'STB,TPR',
-		'data' => 'action=STB,TPR'	
+		'label' => 'SNO, STB, TPR',
+		'data' => 'action=SNO_STB_TPR'	
 		];
 	$col2 = [
 		'thumbnailImageUrl' => $ecsURL.'SW_ON.JPG',
-		'title' => 'This is menu.',
-		'text' => 'Discription',
+		'title' => 'MAC',
+		'text' => 'Switching Digram',
 		'actions' => [$col2_1,$col2_2,$col2_3]
 		];	
 
