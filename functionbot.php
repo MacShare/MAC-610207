@@ -154,10 +154,10 @@ function data1($replyToken,$messages)
 // Function Return data AS Image Coloum 3
 function temp2imgcol3($replyToken,$ecsURL)
 {
-	$imgUrl1 = $ecsURL."ColMenu_1.jpg";
-	$imgUrl2 = $ecsURL."ColMenu_2.jpg";
+	$imgUrl1 = $ecsURL."ColMenu_1.JPG";
+	$imgUrl2 = $ecsURL."ColMenu_2.JPG";
 	//$ecsURL = "https://ecs.egat.co.th/index.php/apps/gallery/ajax/image.php?file=fd20b4335410e38c017713bd6d458deb%2F%2F";
-	$imgUrl3 = $ecsURL."ColMenu_3.jpg";
+	$imgUrl3 = $ecsURL."ColMenu_3.JPG";
 	$col1_act = [
 		'type' => 'postback',
 		'label' => 'Power Flow',
@@ -165,7 +165,8 @@ function temp2imgcol3($replyToken,$ecsURL)
 		];
 	$col1 = [
 		//'imageUrl' => 'https://ecs.egat.co.th/index.php/apps/gallery/ajax/image.php?file=fd20b4335410e38c017713bd6d458deb%2F%2FColMenu_1.jpg',
-		'imageUrl' => 'https://still-inlet-83395.herokuapp.com/img/ColMenu_1.jpg',
+		//'imageUrl' => 'https://still-inlet-83395.herokuapp.com/img/ColMenu_1.jpg',
+		'imageUrl' => $imgUrl1,
 		'title' => 'This is menu.',
 		'text' => 'Discription',
 		'action' => $col1_act
