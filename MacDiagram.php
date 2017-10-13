@@ -16,7 +16,7 @@
 		'data' => 'action=NB_NCO'	
 		];
 	$col1 = [
-		'thumbnailImageUrl' => $ecsURL.'ColMenu_2.jpg',
+		'thumbnailImageUrl' => $ecsURL.'ColMenu_2.JPG',
 		'title' => 'MAC',
 		'text' => 'Switching Digram',
 		'actions' => [$col1_1,$col1_2,$col1_3]
@@ -39,7 +39,7 @@
 		'data' => 'action=SNO_STB_TPR'	
 		];
 	$col2 = [
-		'thumbnailImageUrl' => $ecsURL.'ColMenu_2.jpg',
+		'thumbnailImageUrl' => $ecsURL.'ColMenu_2.JPG',
 		'title' => 'MAC',
 		'text' => 'Switching Digram',
 		'actions' => [$col2_1,$col2_2,$col2_3]
