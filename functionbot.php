@@ -179,7 +179,8 @@ function temp2imgcol3($replyToken,$ecsURL)
 		];
 	$col2 = [
 		//'imageUrl' => 'https://ecs.egat.co.th/index.php/apps/gallery/ajax/image.php?file=fd20b4335410e38c017713bd6d458deb%2F%2FColMenu_2.jpg',
-		'imageUrl' => 'https://still-inlet-83395.herokuapp.com/img/ColMenu_2.jpg',
+		//'imageUrl' => 'https://still-inlet-83395.herokuapp.com/img/ColMenu_2.jpg',
+		'imageUrl' => $imgUrl2,
 		'title' => 'This is menu.',
 		'text' => 'Discription',
 		'action' => $col2_act
