@@ -1,12 +1,12 @@
 <?php
-$Org1 = $ecsURL."BK_1.JPG";
-$Pv1 = $ecsURL."SW_BK.JPG";
+$Org1 = $ecsURL."LLA_1.JPG";
+$Pv1 = $ecsURL."SW_LLA.JPG";
 
-$Org2 = $ecsURL."BN_1.JPG";
-$Pv2 = $ecsURL."SW_BN.JPG";
+$Org2 = $ecsURL."LPR_1.JPG";
+$Pv2 = $ecsURL."SW_LPR.JPG";
 
-$Org3 = $ecsURL."BPL_1.JPG";
-$Pv3 = $ecsURL."SW_BPL.JPG";
+$Org3 = $ecsURL."LPR_2.JPG";
+$Pv3 = $ecsURL."SW_LPR.JPG";
 
 
 $url = 'https://api.line.me/v2/bot/message/reply';
