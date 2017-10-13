@@ -168,6 +168,24 @@ if (!is_null($events['events'])) {
 					case "action=TransformerLoading":
 						// Transformer Last Day
 						include 'MacTransformer.php';
+						break;	
+					case "action=BK_BN_BPL_CHW":
+						include 'MacSorry.php';
+						break;
+					case "action=LLA_LPR":
+						include 'MacSorry.php';
+						break;
+					case "action=NB_NCO":
+						include 'MacSorry.php';
+						break;
+					case "action=NV_ON":
+						include 'MacSorry.php';
+						break;
+					case "action=RPS_RS_SB":
+						include 'MacSorry.php';
+						break;
+					case "action=SNO_STB_TPR":
+						include 'MacSorry.php';
 						break;						
 					default:
 						include 'MacSorry.php';						
