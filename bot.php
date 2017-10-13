@@ -170,7 +170,7 @@ if (!is_null($events['events'])) {
 						include 'MacTransformer.php';
 						break;	
 					case "action=BK_BN_BPL_CHW":
-						include 'MacSorry.php';
+						include 'MacDG_BK_CHW.php';
 						break;
 					case "action=LLA_LPR":
 						include 'MacSorry.php';
