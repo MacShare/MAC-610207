@@ -16,7 +16,7 @@
 		'data' => 'action=TLLoad_Last_Day'	
 		];
 	$col1 = [
-		'thumbnailImageUrl' => $ecsURL.'ColMenu_4.JPG',
+		'thumbnailImageUrl' => $ecsURL.'ColMenu_3.JPG',
 		'title' => 'MAC',
 		'text' => 'Report Record',
 		'actions' => [$col1_1,$col1_2,$col1_3]
