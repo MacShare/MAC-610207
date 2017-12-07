@@ -186,7 +186,16 @@ if (!is_null($events['events'])) {
 						break;
 					case "action=SNO_STB_TPR":
 						include 'MacDG_SNO_TPR.php';
-						break;						
+						break;
+					case "action=Energy_Last_Day":
+						include 'MacSorry.php';
+						break;	
+					case "action=TxLoad2_Last_Day":
+						include 'MacSorry.php';
+						break;	
+					case "action=TLLoad_Last_Day":
+						include 'MacSorry.php';
+						break;							
 					default:
 						include 'MacSorry.php';						
 				}
