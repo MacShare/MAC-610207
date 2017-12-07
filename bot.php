@@ -188,7 +188,7 @@ if (!is_null($events['events'])) {
 						include 'MacDG_SNO_TPR.php';
 						break;
 					case "action=Energy_Last_Day":
-						include 'MacSorry.php';
+						include 'MacEnergy_Last_Day.php';
 						break;	
 					case "action=TxLoad2_Last_Day":
 						include 'MacSorry.php';
