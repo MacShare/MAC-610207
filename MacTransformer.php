@@ -1,7 +1,41 @@
 <?php
+	//Column 1
+	$col1_1 = [
+		'type' => 'postback',
+		'label' => 'Energy Last Day',
+		'data' => 'action=Energy_Last_Day'	
+		];
+	$col1_2 = [
+		'type' => 'postback',
+		'label' => 'Transfermer Load',
+		'data' => 'action=TxLoad2_Last_Day'	
+		];
+	$col1_3 = [
+		'type' => 'postback',
+		'label' => 'Transmission Line',
+		'data' => 'action=TLLoad_Last_Day'	
+		];
+	$col1 = [
+		'thumbnailImageUrl' => $ecsURL.'ColMenu_4.JPG',
+		'title' => 'MAC',
+		'text' => 'Report Record',
+		'actions' => [$col1_1,$col1_2,$col1_3]
+		];
+	
+	
+	$messages = [
+		'type' => 'template',
+		'altText' => 'MAC Report',
+		'template' => [
+			'type' => 'carousel',
+			'columns' => [$col1]
+			]
+		];
+
+
 $SorryTxt = "ขออภัย อยุ่ระหว่างจัดทำ";
 $url = 'https://api.line.me/v2/bot/message/reply';
-$postbackdata = t1($SorryTxt);
+//$postbackdata = t1($SorryTxt);
 $data = data1($replyToken,$postbackdata);
 $post = json_encode($data);
 $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
