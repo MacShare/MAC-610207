@@ -3,7 +3,8 @@ $Org1 = $ecsURL."Energy.jpg";
 $Pv1 = $ecsURL."Energy.jpg";
 
 $url = 'https://api.line.me/v2/bot/message/reply';
-$data = im1($replyToken,$Org1,$Pv1);
+$messages = im1($Org1,$Pv1);
+$data = data1($replyToken,$messages)
 $post = json_encode($data);
 $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 $ch = curl_init($url);
