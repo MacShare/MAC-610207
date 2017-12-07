@@ -191,10 +191,10 @@ if (!is_null($events['events'])) {
 						include 'MacEnergy_Last_Day.php';
 						break;	
 					case "action=TxLoad2_Last_Day":
-						include 'MacSorry.php';
+						include 'MacTxLoad2_Last_Day.php';
 						break;	
 					case "action=TLLoad_Last_Day":
-						include 'MacSorry.php';
+						include 'MacTLLoad_Last_Day.php';
 						break;							
 					default:
 						include 'MacSorry.php';						
