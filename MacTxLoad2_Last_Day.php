@@ -1,6 +1,6 @@
 <?php
-$Org1 = $ecsURL."Tx_Load2.jpg";
-$Pv1 = $ecsURL."Tx_Load2.jpg";
+$Org1 = $ecsURL."TX_LOAD2.jpg";
+$Pv1 = $ecsURL."TX_LOAD2.jpg";
 
 $url = 'https://api.line.me/v2/bot/message/reply';
 $messages = im1($Org1,$Pv1);
