@@ -33,10 +33,11 @@
 		];
 
 
-$SorryTxt = "ขออภัย อยุ่ระหว่างจัดทำ";
+//$SorryTxt = "ขออภัย อยุ่ระหว่างจัดทำ";
 $url = 'https://api.line.me/v2/bot/message/reply';
 //$postbackdata = t1($SorryTxt);
-$data = data1($replyToken,$postbackdata);
+//$data = data1($replyToken,$postbackdata);
+$data = data1($replyToken,$messages);
 $post = json_encode($data);
 $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 $ch = curl_init($url);
