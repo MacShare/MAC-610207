@@ -7,12 +7,12 @@
 		];
 	$col1_2 = [
 		'type' => 'postback',
-		'label' => 'Transfermer Load Last Day',
+		'label' => 'Tx Load Last Day',
 		'data' => 'action=TxLoad2_Last_Day'	
 		];
 	$col1_3 = [
 		'type' => 'postback',
-		'label' => 'Transmission Line Last Day',
+		'label' => 'TL Load Last Day',
 		'data' => 'action=TLLoad_Last_Day'	
 		];
 	$col1 = [
