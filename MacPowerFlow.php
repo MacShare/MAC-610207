@@ -2,7 +2,7 @@
 //$SorryTxt = "ขออภัย อยู่ระหว่างดำเนินการ";
 
 $Org1 = $ecsURL."Mac_Power.jpg";
-$Pv1 = $ecsURL."Mac_Power.jpg"
+$Pv1 = $ecsURL."Mac_Power.jpg";
   
 $url = 'https://api.line.me/v2/bot/message/reply';
 $messages = im1($Org1,$Pv1);
