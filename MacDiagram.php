@@ -3,7 +3,7 @@
 	$col1_1 = [
 		'type' => 'postback',
 		'label' => 'BK',
-		'data' => 'action=BK_BN_BPL_CHW'	
+		'data' => 'action=DG_BK'	
 		];
 	$col1_2 = [
 		'type' => 'postback',
