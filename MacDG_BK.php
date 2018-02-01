@@ -4,7 +4,8 @@ $Pv1 = $ecsURL."SW_BK.JPG";
 
 
 $url = 'https://api.line.me/v2/bot/message/reply';
-$data = im1($replyToken,$Org1,$Pv1);
+$postbackdata = im1($Org1,$Pv1);
+$data = data1($replyToken,$postbackdata);
 $post = json_encode($data);
 $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 $ch = curl_init($url);
