@@ -171,6 +171,51 @@ if (!is_null($events['events'])) {
 						break;	
 					case "action=DG_BK":
 						include 'MacDG_BK.php';
+						break;	
+					case "action=DG_BN":
+						include 'MacDG_BN.php';
+						break;		
+					case "action=DG_BPL":
+						include 'MacDG_BPL.php';
+						break;	
+					case "action=DG_CHW":
+						include 'MacDG_CHW.php';
+						break;	
+					case "action=DG_LLA":
+						include 'MacDG_LLA.php';
+						break;		
+					case "action=DG_LPR":
+						include 'MacDG_LPR.php';
+						break;	
+					case "action=DG_NB":
+						include 'MacDG_NB.php';
+						break;		
+					case "action=DG_NCO":
+						include 'MacDG_NCO.php';
+						break;		
+					case "action=DG_NV":
+						include 'MacDG_NV.php';
+						break;	
+					case "action=DG_ON":
+						include 'MacDG_ON.php';
+						break;		
+					case "action=DG_RPS":
+						include 'MacDG_RPS.php';
+						break;
+					case "action=DG_RS":
+						include 'MacDG_RS.php';
+						break;	
+					case "action=DG_SB":
+						include 'MacDG_SB.php';
+						break;		
+					case "action=DG_SNO":
+						include 'MacDG_SNO.php';
+						break;	
+					case "action=DG_STB":
+						include 'MacDG_STB.php';
+						break;	
+					case "action=DG_TPR":
+						include 'MacDG_TPR.php';
 						break;						
 					case "action=BK_BN_BPL_CHW":
 						include 'MacDG_BK_CHW.php';
