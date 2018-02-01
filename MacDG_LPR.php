@@ -1,9 +1,10 @@
 <?php
 $Org1 = $ecsURL."LPR_1.JPG";
 $Pv1 = $ecsURL."SW_LPR.JPG";
+$Org2 = $ecsURL."LPR_2.JPG";
+$Pv2 = $ecsURL."SW_LPR.JPG";
 $url = 'https://api.line.me/v2/bot/message/reply';
-$postbackdata = im1($Org1,$Pv1);
-$data = data1($replyToken,$postbackdata);
+$data = im2($replyToken,$Org1,$Pv1,$Org2,$Pv2);
 $post = json_encode($data);
 $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 $ch = curl_init($url);
