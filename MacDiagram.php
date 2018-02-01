@@ -43,14 +43,39 @@
 		'title' => 'MAC',
 		'text' => 'Switching Digram',
 		'actions' => [$col2_1,$col2_2,$col2_3]
-		];	
+		];
+
+	//Column 3
+	$col3_1 = [
+		'type' => 'postback',
+		'label' => 'NV, ON',
+		'data' => 'action=NV_ON'	
+		];
+	$col3_2 = [
+		'type' => 'postback',
+		'label' => 'RPS, RS, SB',
+		'data' => 'action=RPS_RS_SB'	
+		];
+	$col3_3 = [
+		'type' => 'postback',
+		'label' => 'SNO, STB, TPR',
+		'data' => 'action=SNO_STB_TPR'	
+		];
+	$col3 = [
+		'thumbnailImageUrl' => $ecsURL.'ColMenu_2.JPG',
+		'title' => 'MAC',
+		'text' => 'Switching Digram',
+		'actions' => [$col3_1,$col3_2,$col3_3]
+		];
+
+
 
 	$messages = [
 		'type' => 'template',
 		'altText' => 'MAC Substation',
 		'template' => [
 			'type' => 'carousel',
-			'columns' => [$col1,$col2]
+			'columns' => [$col1,$col2,$col2,$col2,$col2,$col2]
 			]
 		];
 
