@@ -8,12 +8,12 @@
 	$col1_2 = [
 		'type' => 'postback',
 		'label' => 'BN',
-		'data' => 'action=LLA_LPR'	
+		'data' => 'action=DG_BN'	
 		];
 	$col1_3 = [
 		'type' => 'postback',
 		'label' => 'BPL',
-		'data' => 'action=NB_NCO'	
+		'data' => 'action=DG_BPL'	
 		];
 	$col1 = [
 		'thumbnailImageUrl' => $ecsURL.'ColMenu_2.JPG',
@@ -26,17 +26,17 @@
 	$col2_1 = [
 		'type' => 'postback',
 		'label' => 'CHW',
-		'data' => 'action=NV_ON'	
+		'data' => 'action=DG_CHW'	
 		];
 	$col2_2 = [
 		'type' => 'postback',
 		'label' => 'LLA',
-		'data' => 'action=RPS_RS_SB'	
+		'data' => 'action=DG_LLA'	
 		];
 	$col2_3 = [
 		'type' => 'postback',
 		'label' => 'LPR',
-		'data' => 'action=SNO_STB_TPR'	
+		'data' => 'action=DG_LPR'	
 		];
 	$col2 = [
 		'thumbnailImageUrl' => $ecsURL.'ColMenu_2.JPG',
@@ -49,17 +49,17 @@
 	$col3_1 = [
 		'type' => 'postback',
 		'label' => 'NB',
-		'data' => 'action=NV_ON'	
+		'data' => 'action=DG_NB'	
 		];
 	$col3_2 = [
 		'type' => 'postback',
 		'label' => 'NCO',
-		'data' => 'action=RPS_RS_SB'	
+		'data' => 'action=DG_NCO'	
 		];
 	$col3_3 = [
 		'type' => 'postback',
 		'label' => 'NV',
-		'data' => 'action=SNO_STB_TPR'	
+		'data' => 'action=DG_NV'	
 		];
 	$col3 = [
 		'thumbnailImageUrl' => $ecsURL.'ColMenu_2.JPG',
@@ -72,17 +72,17 @@
 	$col4_1 = [
 		'type' => 'postback',
 		'label' => 'ON',
-		'data' => 'action=NV_ON'	
+		'data' => 'action=DG_ON'	
 		];
 	$col4_2 = [
 		'type' => 'postback',
 		'label' => 'RPS',
-		'data' => 'action=RPS_RS_SB'	
+		'data' => 'action=DG_RPS'	
 		];
 	$col4_3 = [
 		'type' => 'postback',
 		'label' => 'RS',
-		'data' => 'action=SNO_STB_TPR'	
+		'data' => 'action=DG_RS'	
 		];
 	$col4 = [
 		'thumbnailImageUrl' => $ecsURL.'ColMenu_2.JPG',
@@ -95,17 +95,17 @@
 	$col5_1 = [
 		'type' => 'postback',
 		'label' => 'SB',
-		'data' => 'action=NV_ON'	
+		'data' => 'action=DG_SB'	
 		];
 	$col5_2 = [
 		'type' => 'postback',
 		'label' => 'SNO',
-		'data' => 'action=RPS_RS_SB'	
+		'data' => 'action=DG_SNO'	
 		];
 	$col5_3 = [
 		'type' => 'postback',
 		'label' => 'STB',
-		'data' => 'action=SNO_STB_TPR'	
+		'data' => 'action=DG_STB'	
 		];
 	$col5 = [
 		'thumbnailImageUrl' => $ecsURL.'ColMenu_2.JPG',
@@ -118,17 +118,17 @@
 	$col6_1 = [
 		'type' => 'postback',
 		'label' => 'TPR',
-		'data' => 'action=NV_ON'	
+		'data' => 'action=DG_TPR'	
 		];
 	$col6_2 = [
 		'type' => 'postback',
 		'label' => 'Future',
-		'data' => 'action=RPS_RS_SB'	
+		'data' => 'action=Future'	
 		];
 	$col6_3 = [
 		'type' => 'postback',
 		'label' => 'Future',
-		'data' => 'action=SNO_STB_TPR'	
+		'data' => 'action=Future'	
 		];
 	$col6 = [
 		'thumbnailImageUrl' => $ecsURL.'ColMenu_2.JPG',
