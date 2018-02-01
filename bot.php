@@ -169,6 +169,9 @@ if (!is_null($events['events'])) {
 						// Transformer Last Day
 						include 'MacTransformer.php';
 						break;	
+					case "action=DG_BK":
+						include 'MacDG_BK.php';
+						break;						
 					case "action=BK_BN_BPL_CHW":
 						include 'MacDG_BK_CHW.php';
 						break;
