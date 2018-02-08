@@ -145,8 +145,11 @@ if (!is_null($events['events'])) {
 						curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 						$result = curl_exec($ch);
 						curl_close($ch);
-						echo $result . "\r\n";	
-						break;
+						echo $result . "\r\n";
+						include 'MacPowerFlow.php';
+						include 'MacDiagram.php';
+						include 'MacTransformer.php';
+						break;						
 					case "action=Powerflow":
 						// Power Flow Last Time
 						include 'MacPowerFlow.php';
