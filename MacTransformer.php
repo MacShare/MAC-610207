@@ -2,23 +2,23 @@
 	//Column 1
 	$col1_1 = [
 		'type' => 'postback',
-		'label' => 'Energy Last Day',
+		'label' => 'Energy',
 		'data' => 'action=Energy_Last_Day'	
 		];
 	$col1_2 = [
 		'type' => 'postback',
-		'label' => 'Tx Load Last Day',
+		'label' => 'Tx Load',
 		'data' => 'action=TxLoad2_Last_Day'	
 		];
 	$col1_3 = [
 		'type' => 'postback',
-		'label' => 'TL Load Last Day',
+		'label' => 'TL Load',
 		'data' => 'action=TLLoad_Last_Day'	
 		];
 	$col1 = [
 		'thumbnailImageUrl' => $ecsURL.'ColMenu_3.JPG',
 		'title' => 'MAC',
-		'text' => 'Report Record',
+		'text' => 'Report Record Last Day',
 		'actions' => [$col1_1,$col1_2,$col1_3]
 		];
 	
