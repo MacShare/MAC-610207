@@ -131,8 +131,7 @@ if (!is_null($events['events'])) {
 			//Select Group
 			if (($togroupid == 'Cd90b89c39f5a695f6d6996c80829e269') or ($togroupid == 'Cc7ac9ccc51f05b2a60a1abed8cf85723') or ($touserid == 'U554a18dbd36996fdb3dd95c218cf6db0')) {
 				switch ($text) {
-					case "MacShare":
-						include 'MacPowerFlow.php';
+					case "action=Powerflow":
 						// MacShare Menu Last Time
 						$url = 'https://api.line.me/v2/bot/message/reply';
 						$data = temp2imgcol3($replyToken,$ecsURL);			
@@ -147,11 +146,8 @@ if (!is_null($events['events'])) {
 						$result = curl_exec($ch);
 						curl_close($ch);
 						echo $result . "\r\n";
-						
-						include 'MacDiagram.php';
-						include 'MacTransformer.php';
 						break;						
-					case "action=Powerflow":
+					case "MacShare":
 						// Power Flow Last Time
 						include 'MacPowerFlow.php';
 						break;					
