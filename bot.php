@@ -131,7 +131,7 @@ if (!is_null($events['events'])) {
 			// License Check
 			include 'MacLicense.php';			
 			//Select Group
-			if (($togroupid == 'Cd90b89c39f5a695f6d6996c80829e269') or ($togroupid == 'Cc7ac9ccc51f05b2a60a1abed8cf85723') or ($touserid == 'U554a18dbd36996fdb3dd95c218cf6db0') or ($userlicense =  "true")) {
+			if (($togroupid == 'Cd90b89c39f5a695f6d6996c80829e269') or ($togroupid == 'Cc7ac9ccc51f05b2a60a1abed8cf85723') or ($touserid == 'U554a18dbd36996fdb3dd95c218cf6db0') or ($userlicense == 'true')) {
 				switch ($text) {
 					case "MacShare":
 						// MacShare Menu Last Time
@@ -187,7 +187,7 @@ if (!is_null($events['events'])) {
 			include 'MacLicense.php';			
 			//$postbackdata = $postbackdata;
 			//$postbackdata = "Test Postback";
-			if (($togroupid == 'Cd90b89c39f5a695f6d6996c80829e269') or ($togroupid == 'Cc7ac9ccc51f05b2a60a1abed8cf85723') or ($touserid == 'U554a18dbd36996fdb3dd95c218cf6db0')) {
+			if (($togroupid == 'Cd90b89c39f5a695f6d6996c80829e269') or ($togroupid == 'Cc7ac9ccc51f05b2a60a1abed8cf85723') or ($touserid == 'U554a18dbd36996fdb3dd95c218cf6db0') or ($userlicense == 'true')) {
 				switch ($postbackdata) {
 					case "action=Powerflow":
 						// Power Flow Last Time
