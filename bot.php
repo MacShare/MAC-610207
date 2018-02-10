@@ -158,7 +158,11 @@ if (!is_null($events['events'])) {
 					case "action=TransformerLoading":
 						// Transformer Last Day
 						include 'MacTransformer.php';
-						break;						
+						break;	
+					case "action=TelCheck":
+						// Transformer Last Day
+						include 'TelCheck.php';
+						break;							
 					default:
 						include 'MacSorry.php';						
 				}									
