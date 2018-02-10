@@ -8,7 +8,7 @@ if (($text <> "") && ($userlicense == 'false') && (strlen($text) == 11) && (subs
 }
 else {
   //$SorryTxt = "ขออภัยคุณยังไม่ได้ลงทะเบียน และกรอกข้อมูลไม่ถูกต้อง ".$text." ".$userlicense." ".strlen($text)." ".substr($text,0,2);
-  $SorryTxt = "ขออภัยคุณยังไม่ได้ลงทะเบียน และกรอกข้อมูลไม่ถูกต้อง";
+  $SorryTxt = "ขออภัยคุณยังไม่ได้ลงทะเบียน และกรอกข้อมูลไม่ถูกต้อง โปรดติดต่อ MAC";
 }
 
 $url = 'https://api.line.me/v2/bot/message/reply';
