@@ -160,9 +160,9 @@ if (!is_null($events['events'])) {
 						include 'MacTransformer.php';
 						break;	
 					case "action=TelCheck":
-						// Transformer Last Day
-						//include 'TelCheck.php';
-						include 'MacSorry.php';
+						// Tel Check
+						include 'TelCheck.php';
+						//include 'MacSorry.php';
 						break;							
 					default:
 						include 'MacSorry.php';						
