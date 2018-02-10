@@ -1,13 +1,13 @@
 <?php
 //Have $touserid, $toroomid, $togroupid, $userlicense, $text, $postbackdata From Bot
 //Start $userlicense = "false" $License = file_get_contents("License.txt");
-$SorryTxt = "ขออภัยคุณยังไม่ได้ลงทะเบียน โปรดติดต่อ MAC ถ้าไม่ทราบวิธีลงทะเบียน";
+$SorryTxt = "ขออภัยคุณยังไม่ได้ลงทะเบียน โปรดติดต่อ MAC";
 
 if (($text <> "") && ($userlicense == 'false') && (strlen($text) == 11) && (substr($string,0,2) == 't0')) {
   $SorryTxt = $text;
 }
 else {
-  $SorryTxt = "ขออภัยคุณยังไม่ได้ลงทะเบียน โปรดติดต่อ MAC ถ้าไม่ทราบวิธีลงทะเบียน";
+  $SorryTxt = "ขออภัยคุณยังไม่ได้ลงทะเบียน และกรอกข้อมูลไม่ถูกต้อง";
 }
 
 $url = 'https://api.line.me/v2/bot/message/reply';
