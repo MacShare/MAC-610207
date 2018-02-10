@@ -1,7 +1,15 @@
 <?php
-//Have $touserid, $toroomid, $togroupid, $userlicense From Bot
+//Have $touserid, $toroomid, $togroupid, $userlicense, $text, $postbackdata From Bot
 //Start $userlicense = "false" $License = file_get_contents("License.txt");
 $SorryTxt = "ขออภัยคุณยังไม่ได้ลงทะเบียน โปรดติดต่อ MAC ถ้าไม่ทราบวิธีลงทะเบียน";
+
+if (($text <> "") && ($userlicense == 'false') && (strlen($text) == 11) && (substr($string,0,1) == 't0') {
+  $SorryTxt = $text;
+}
+else {
+  $SorryTxt = "ขออภัยคุณยังไม่ได้ลงทะเบียน โปรดติดต่อ MAC ถ้าไม่ทราบวิธีลงทะเบียน";
+}
+
 $url = 'https://api.line.me/v2/bot/message/reply';
 $postbackdata = t1($SorryTxt);
 $data = data1($replyToken,$postbackdata);
