@@ -127,9 +127,11 @@ if (!is_null($events['events'])) {
 			$toroomid = $event['source']['roomId'];
 			$togroupid = $event['source']['groupId'];
 			$replyToken = $event['replyToken'];
-			$text = $event['message']['text'];			
+			$text = $event['message']['text'];
+			// License Check
+			include 'MacLicense.php';
 			//Select Group
-			if (($togroupid == 'Cd90b89c39f5a695f6d6996c80829e269') or ($togroupid == 'Cc7ac9ccc51f05b2a60a1abed8cf85723') or ($touserid == 'U554a18dbd36996fdb3dd95c218cf6db0')) {
+			if (($togroupid == 'Cd90b89c39f5a695f6d6996c80829e269') or ($togroupid == 'Cc7ac9ccc51f05b2a60a1abed8cf85723') or ($touserid == 'U554a18dbd36996fdb3dd95c218cf6db0') or ($userlicense =  "true")) {
 				switch ($text) {
 					case "MacShare":
 						// MacShare Menu Last Time
