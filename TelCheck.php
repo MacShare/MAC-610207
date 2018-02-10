@@ -1,5 +1,5 @@
 <?php
-$TelCheck = file_get_contents('./FlashNews.txt',FILE_USE_INCLUDE_PATH);
+$TelCheck = file_get_contents("./FlashNews.txt",FILE_USE_INCLUDE_PATH);
 
 $SorryTxt = $TelCheck;
 
