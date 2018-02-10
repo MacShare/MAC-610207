@@ -3,7 +3,7 @@
 //Start $userlicense = "false" $License = file_get_contents("License.txt");
 $SorryTxt = "ขออภัยคุณยังไม่ได้ลงทะเบียน โปรดติดต่อ MAC ถ้าไม่ทราบวิธีลงทะเบียน";
 
-if (($text <> "") && ($userlicense == 'false') && (strlen($text) == 11) && (substr($string,0,1) == 't0')) {
+if (($text <> "") && ($userlicense == 'false') && (strlen($text) == 11) && (substr($string,0,2) == 't0')) {
   $SorryTxt = $text;
 }
 else {
