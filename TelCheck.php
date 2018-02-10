@@ -1,7 +1,8 @@
 <?php
-$TelCheck = file_get_contents('./FlashNews.txt',true);
+$TelCheck = file_get_contents('./FlashNews.txt',FILE_USE_INCLUDE_PATH);
 
 $SorryTxt = $TelCheck;
+
 $url = 'https://api.line.me/v2/bot/message/reply';
 $postbackdata = t1($SorryTxt);
 $data = data1($replyToken,$postbackdata);
