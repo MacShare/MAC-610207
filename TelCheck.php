@@ -1,5 +1,5 @@
 <?php
-$TelCheck = file_get_contents("FlashNews.txt","r");
+$TelCheck = file_get_contents('./FlashNews.txt',true);
 
 $SorryTxt = $TelCheck;
 $url = 'https://api.line.me/v2/bot/message/reply';
