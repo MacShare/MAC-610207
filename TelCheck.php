@@ -1,5 +1,8 @@
 <?php
-$SorryTxt = "ขออภัยระบบอยู่ระหว่างการปรับปรุง";
+$file = fopen("FlashNews.txt","r");
+$TelCheck = fgets($file);
+fclose($file);
+$SorryTxt = $TelCheck;
 $url = 'https://api.line.me/v2/bot/message/reply';
 $postbackdata = t1($SorryTxt);
 $data = data1($replyToken,$postbackdata);
