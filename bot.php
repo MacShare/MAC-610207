@@ -129,8 +129,7 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 			$text = $event['message']['text'];
 			// License Check
-			include 'MacLicense.php';
-			//include 'MacAccept.php';
+			include 'MacLicense.php';			
 			//Select Group
 			if (($togroupid == 'Cd90b89c39f5a695f6d6996c80829e269') or ($togroupid == 'Cc7ac9ccc51f05b2a60a1abed8cf85723') or ($touserid == 'U554a18dbd36996fdb3dd95c218cf6db0') or ($userlicense =  "true")) {
 				switch ($text) {
@@ -170,7 +169,10 @@ if (!is_null($events['events'])) {
 					default:
 						include 'MacSorry.php';						
 				}									
-			}	
+			}
+			else {
+				include 'MacAccept.php';
+			}
 		}
     // Action Postback only when MacShare.
 	  	if ($event['type'] == 'postback') {
@@ -180,6 +182,9 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 			$timedata = $event['timestamp'];
 			$postbackdata = $event['postback']['data'];
+			
+			// License Check
+			include 'MacLicense.php';			
 			//$postbackdata = $postbackdata;
 			//$postbackdata = "Test Postback";
 			if (($togroupid == 'Cd90b89c39f5a695f6d6996c80829e269') or ($togroupid == 'Cc7ac9ccc51f05b2a60a1abed8cf85723') or ($touserid == 'U554a18dbd36996fdb3dd95c218cf6db0')) {
@@ -274,7 +279,10 @@ if (!is_null($events['events'])) {
 					default:
 						include 'MacSorry.php';						
 				}
-			}	
+			}
+			else {
+				include 'MacAccept.php';
+			}
 		} 
   }
 }
