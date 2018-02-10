@@ -13,6 +13,6 @@ if(iscontain($License,$touserid)) {
   $userlicense =  "true"; 
 }
 else {
-  $userlicense =  "flase";
+  $userlicense =  "false";
 }
 ?>
