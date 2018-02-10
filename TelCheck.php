@@ -1,7 +1,7 @@
 <?php
 //$TelCheck = file_get_contents("https://still-inlet-83395.herokuapp.com/FlashNews.txt",FILE_USE_INCLUDE_PATH);
 $TelCheck = file_get_contents("FlashNews.txt");
-$SorryTxt = $TelCheck;
+$SorryTxt = strlen($TelCheck);
 
 $url = 'https://api.line.me/v2/bot/message/reply';
 $postbackdata = t1($SorryTxt);
