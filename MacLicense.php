@@ -11,10 +11,10 @@ function iscontain($string,$find) {
   } 
 } 
 if(iscontain($License,$touserid)) {
-  echo "true"; 
+  $userlicense =  "true"; 
 }
 else {
-  echo "flase";
+  $userlicense =  "flase";
 }
 //Have $tTel From Bot
 $TelCheck = file_get_contents("FlashNews.txt");
