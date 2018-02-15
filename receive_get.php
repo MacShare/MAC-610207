@@ -22,6 +22,7 @@ if (!is_null($text)) {
 	$url = 'https://api.line.me/v2/bot/message/push';
 	$data = [
   		'to' => [$UserGet],
+		//'to' => 'Cd90b89c39f5a695f6d6996c80829e269',
 		'messages' => [$messages]
 		];
 	$post = json_encode($data);
@@ -36,6 +37,6 @@ if (!is_null($text)) {
 	$result = curl_exec($ch);
 	curl_close($ch);
 	echo "Success" . "\r\n";
-	'echo $result . "\r\n";	
+	//echo $result . "\r\n";	
 }
 ?>
