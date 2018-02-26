@@ -185,10 +185,11 @@ if (!is_null($events['events'])) {
 			$postbackdata = $event['postback']['data'];
 			
 			// License Check
-			include 'MacLicense.php';			
+			include 'MacLicense.php';
+			$UserBypass = "True";
 			//$postbackdata = $postbackdata;
 			//$postbackdata = "Test Postback";
-			if (($togroupid == 'Cd90b89c39f5a695f6d6996c80829e269') or ($togroupid == 'Cc7ac9ccc51f05b2a60a1abed8cf85723') or ($touserid == 'U554a18dbd36996fdb3dd95c218cf6db0') or ($userlicense == 'true')) {
+			if (($togroupid == 'Cd90b89c39f5a695f6d6996c80829e269') or ($togroupid == 'Cc7ac9ccc51f05b2a60a1abed8cf85723') or ($touserid == 'U554a18dbd36996fdb3dd95c218cf6db0') or ($userlicense == 'true') or ($UserBypass == 'True')) {
 				switch ($postbackdata) {
 					case "action=Powerflow":
 						// Power Flow Last Time
