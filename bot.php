@@ -153,7 +153,11 @@ if (!is_null($events['events'])) {
 					case "action=Powerflow":
 						// Power Flow Last Time
 						include 'MacPowerFlow.php';
-						break;					
+						break;
+					case "action=SystemLoad":
+						// Switching Diagram
+						include 'MacSystemLoad.php';
+						break;						
 					case "action=SwitchingDiagram":
 						// Switching Diagram
 						include 'MacDiagram.php';
@@ -194,7 +198,11 @@ if (!is_null($events['events'])) {
 					case "action=Powerflow":
 						// Power Flow Last Time
 						include 'MacPowerFlow.php';
-						break;					
+						break;	
+					case "action=SystemLoad":
+						// Switching Diagram
+						include 'MacSystemLoad.php';
+						break;							
 					case "action=SwitchingDiagram":
 						// Switching Diagram
 						include 'MacDiagram.php';
