@@ -19,7 +19,7 @@
 	$col1 = [
 		'thumbnailImageUrl' => $ecsURL.'ColMenu_1.JPG',
 		'title' => 'MAC',
-		'text' => 'Switching Digram',
+		'text' => 'Power Flow',
 		'actions' => [$col1_1,$col1_2,$col1_3]
 		];
 	
@@ -42,7 +42,7 @@
 	$col2 = [
 		'thumbnailImageUrl' => $ecsURL.'ColMenu_1.JPG',
 		'title' => 'MAC',
-		'text' => 'Switching Digram',
+		'text' => 'Power Flow',
 		'actions' => [$col2_1,$col2_2,$col2_3]
 		];
 	//Column 3
@@ -64,7 +64,7 @@
 	$col3 = [
 		'thumbnailImageUrl' => $ecsURL.'ColMenu_1.JPG',
 		'title' => 'MAC',
-		'text' => 'Switching Digram',
+		'text' => 'Power Flow',
 		'actions' => [$col3_1,$col3_2,$col3_3]
 		];
 	//Column 4
@@ -86,7 +86,7 @@
 	$col4 = [
 		'thumbnailImageUrl' => $ecsURL.'ColMenu_1.JPG',
 		'title' => 'MAC',
-		'text' => 'Switching Digram',
+		'text' => 'Power Flow',
 		'actions' => [$col4_1,$col4_2,$col4_3]
 		];
 	//Column 5
@@ -108,7 +108,7 @@
 	$col5 = [
 		'thumbnailImageUrl' => $ecsURL.'ColMenu_1.JPG',
 		'title' => 'MAC',
-		'text' => 'Switching Digram',
+		'text' => 'Power Flow',
 		'actions' => [$col5_1,$col5_2,$col5_3]
 		];
 	//Column 6
@@ -130,7 +130,7 @@
 	$col6 = [
 		'thumbnailImageUrl' => $ecsURL.'ColMenu_1.JPG',
 		'title' => 'MAC',
-		'text' => 'Switching Digram',
+		'text' => 'Power Flow',
 		'actions' => [$col6_1,$col6_2,$col6_3]
 		];
 	$messages = [
