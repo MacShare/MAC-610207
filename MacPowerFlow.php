@@ -133,12 +133,35 @@
 		'text' => 'Power Flow',
 		'actions' => [$col6_1,$col6_2,$col6_3]
 		];
+	//Column 7 Power Flow
+	$col7_1 = [
+		'type' => 'postback',
+		'label' => 'MAC Powr Flow',
+		'data' => 'action=Powerflow'	
+		];
+	$col7_2 = [
+		'type' => 'postback',
+		'label' => 'Future',
+		'data' => 'action=Future'	
+		];
+	$col7_3 = [
+		'type' => 'postback',
+		'label' => 'Future',
+		'data' => 'action=Future'	
+		];
+	$col7 = [
+		'thumbnailImageUrl' => $ecsURL.'ColMenu_1.JPG',
+		'title' => 'MAC',
+		'text' => 'Power Flow',
+		'actions' => [$col6_1,$col6_2,$col6_3]
+		];
 	$messages = [
 		'type' => 'template',
 		'altText' => 'MAC Substation',
 		'template' => [
 			'type' => 'carousel',
-			'columns' => [$col1,$col2,$col3,$col4,$col5,$col6]
+			//'columns' => [$col1,$col2,$col3,$col4,$col5,$col6]
+			'columns' => [$col7]
 			]
 		];
 
