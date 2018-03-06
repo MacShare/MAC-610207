@@ -136,7 +136,7 @@
 	//Column 7 Power Flow
 	$col7_1 = [
 		'type' => 'postback',
-		'label' => 'MAC Powr Flow',
+		'label' => 'MAC Power Flow',
 		'data' => 'action=Powerflow'	
 		];
 	$col7_2 = [
@@ -153,7 +153,7 @@
 		'thumbnailImageUrl' => $ecsURL.'ColMenu_1.JPG',
 		'title' => 'MAC',
 		'text' => 'Power Flow',
-		'actions' => [$col6_1,$col6_2,$col6_3]
+		'actions' => [$col7_1,$col7_2,$col7_3]
 		];
 	$messages = [
 		'type' => 'template',
