@@ -137,7 +137,7 @@
 	$col7_1 = [
 		'type' => 'postback',
 		'label' => 'MAC Power Flow',
-		'data' => 'action=Powerflow'	
+		'data' => 'action=Power_MAC'	
 		];
 	$col7_2 = [
 		'type' => 'postback',
